@@ -1,0 +1,53 @@
+- passwd
+Changing password for etern1c.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+
+- date
+Mon Apr  1 09:52:12 +07 2019
+
+- hostname
+etern1c-VPCEG38FG
+
+- arch
+x86_64
+
+- uname -a
+Linux etern1c-VPCEG38FG 4.18.0-16-generic #17~18.04.1-Ubuntu SMP Tue Feb 12 13:35:51 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+-dmesg
+[ 4018.823269] input: PixArt USB Optical Mouse as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:093A:2510.0006/input/input18
+[ 4018.824098] hid-generic 0003:093A:2510.0006: input,hidraw0: USB HID v1.11 Mouse [PixArt USB Optical Mouse] on usb-0000:00:1d.0-1.2/input0
+[ 4021.485404] usb 2-1.2: USB disconnect, device number 8
+[ 4021.767372] usb 2-1.2: new low-speed USB device number 9 using ehci-pci
+[ 4021.879927] usb 2-1.2: New USB device found, idVendor=093a, idProduct=2510, bcdDevice= 1.00
+[ 4021.879936] usb 2-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[ 4021.879940] usb 2-1.2: Product: USB Optical Mouse
+[ 4021.879945] usb 2-1.2: Manufacturer: PixArt
+[ 4021.883189] input: PixArt USB Optical Mouse as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:093A:2510.0007/input/input19
+[ 4021.883898] hid-generic 0003:093A:2510.0007: input,hidraw0: USB HID v1.11 Mouse [PixArt USB Optical Mouse] on usb-0000:00:1d.0-1.2/input0
+
+- uptime
+ 09:55:37 up  1:13,  1 user,  load average: 0.18, 0.29, 0.47
+
+- who am i
+
+- whoami
+etern1c
+
+- id
+uid=1000(etern1c) gid=1000(etern1c) groups=1000(etern1c),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),118(lpadmin),126(sambashare),127(wireshark)
+
+- last
+wtmp begins Mon Apr  1 10:06:04 2019
+
+- finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+etern1c   etern1c    tty7     1:28  Apr  1 08:43 (:0)
+
+- w
+ 10:10:57 up  1:28,  1 user,  load average: 0.31, 0.29, 0.36
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+etern1c  tty7     :0               08:43    1:28m  4:03   0.04s /bin/sh /etc/xd
+
