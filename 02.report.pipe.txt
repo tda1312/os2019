@@ -1,0 +1,17 @@
++) cd .; ls -l | grep list
+
++)  wc -l /etc/passwd
+
+40 /etc/passwd
+
++) free -m | grep Mem | awk '{print $2}'
+
+3926
+
++) cat /proc/cpuinfo | awk '/^core/{print}' | wc -l
+
+4
+
++)  find . | grep jpg | wc -l
+
+6
