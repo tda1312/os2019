@@ -1,0 +1,36 @@
+-) ps -e
+
+ 2014 ?        00:00:00 gvfsd-metadata
+ 2171 ?        00:00:01 xfce4-terminal
+ 2175 pts/0    00:00:00 bash
+ 2214 ?        00:00:00 cupsd
+ 2215 ?        00:00:00 cups-browsed
+ 2217 ?        00:00:00 kworker/3:2-cgr
+ 2288 ?        00:00:00 kworker/1:1-cgr
+ 2302 ?        00:00:00 tumblerd
+ 2308 ?        00:00:00 mousepad
+ 2358 pts/0    00:00:00 ps
+
+-) ps -e | grep firefox | awk '{print($1)}'
+
+ 2390
+
+-) cat /proc/2390/status
+
+CapBnd:	0000003fffffffff
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	0
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	ff
+Cpus_allowed_list:	0-7
+Mems_allowed:	00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	35845
+nonvoluntary_ctxt_switches:	1929
+
+-) kill -s STOP 2390
+
+-) kill -s CONT 2390
+
+-) kill -s KILL 2390
