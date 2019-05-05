@@ -1,0 +1,15 @@
+-) grep systemd /proc/
+
+ S        systemd     1       391.019902      1898   120         0.000000      1307.516943         0.000000 0 0 /autogroup-2
+ Ssystemd-resolve   668        82.588885       475   120         0.000000       218.521220         0.000000 0 0 /autogroup-28
+ S systemd-logind   690        25.583011      1678   120         0.000000       114.508120         0.000000 0 0 /autogroup-43
+ S        systemd  1175        70.215528        79   120         0.000000        73.846269         0.000000 0 0 /autogroup-94
+ Ssystemd-timesyn   667        22.294514        91   120         0.000000        58.546018         0.000000 0 0 /autogroup-27
+ S  systemd-udevd   293      1112.559551       441   120         0.000000       705.849008         0.000000 0 0 /autogroup-18
+ Ssystemd-journal   265        48.346857       810   119         0.000000       331.463301         0.000000 0 0 /autogroup-3
+
+-) grep switch /proc/1/sched | awk '{print($3)}'
+
+1917
+1572
+345
